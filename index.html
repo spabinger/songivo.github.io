@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Songivo - Song manager for iPhone and iPad</title>
-    <meta name="description" content="Songivo is a ChordPro and PDF song manager for gigging musicians on iPhone and iPad. Build setlists, perform live, annotate, sync, and share band libraries.">
+    <title>Songivo - Songbook Manager</title>
+    <meta name="description" content="Songivo is a ChordPro and PDF songbook manager for gigging musicians on iPhone and iPad. Build setlists, perform live, annotate, sync, and share band libraries.">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
@@ -14,10 +14,9 @@
         <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
         <div class="nav-links" data-nav-links>
           <a href="features.html">Features</a>
-          <a href="help.html">Help</a>
-          <a href="privacy.html">Privacy</a>
+          <a href="help.html">Docs</a>
           <a href="contact.html">Contact</a>
-          <a class="button secondary" href="#download">App Store soon</a>
+          <a class="button secondary" href="#download">App Store link pending</a>
         </div>
       </nav>
     </header>
@@ -26,52 +25,23 @@
       <section class="hero">
         <div class="hero-grid">
           <div>
-            <p class="eyebrow">ChordPro + PDF for live musicians</p>
+            <p class="eyebrow">iPhone + iPad songbook for live musicians</p>
             <h1>Songivo</h1>
-            <p class="lede">A focused iPhone and iPad songbook for players who need setlists, charts, notes, sync, and band libraries ready before the count-in.</p>
+            <p class="lede">Manage ChordPro charts, PDF sheets, image imports, SongBook Pro files, setlists, annotations, iCloud sync, purchases, and band libraries in one focused app for rehearsal and the stage.</p>
             <div class="hero-actions" id="download">
-              <span class="button disabled" aria-disabled="true">App Store coming soon</span>
-              <a class="button ghost" href="help.html">Read help guides</a>
+              <span class="button disabled" aria-disabled="true">App Store link pending</span>
             </div>
             <div class="hero-meta" aria-label="Songivo highlights">
-              <div><strong>ChordPro</strong><span>Transpose, style, and perform chord charts.</span></div>
-              <div><strong>PDF</strong><span>Import, process, view, and annotate sheets.</span></div>
-              <div><strong>Band</strong><span>Share songs, sets, and gig cues with your group.</span></div>
+              <div><strong>Charts</strong><span>Transpose ChordPro, view PDFs, and mark up songs.</span></div>
+              <div><strong>Sets</strong><span>Build setlists with notes, overrides, and exports.</span></div>
+              <div><strong>Band</strong><span>Share songs, sets, sync status, and gig cues.</span></div>
             </div>
           </div>
-          <div class="device-stage" aria-label="Product screenshot placeholders">
+          <div class="device-stage hero-song-stage" aria-label="Songivo loaded song screenshot">
             <div class="device tablet">
               <div class="screen">
-                <span class="shot-label">Screenshot slot: iPad live mode</span>
-                <div class="mock-song">
-                  <span class="mock-line chord"></span>
-                  <span class="mock-line"></span>
-                  <span class="mock-line chord"></span>
-                  <span class="mock-line" style="width: 86%"></span>
-                  <span class="mock-line chord" style="width: 58%"></span>
-                  <span class="mock-line" style="width: 92%"></span>
-                </div>
-                <div class="mock-panel">
-                  <strong>Tonight's set</strong>
-                  <p>Opening song - Key E - Auto-scroll ready</p>
-                </div>
-                <div class="mock-controls" aria-hidden="true">
-                  <span class="mock-control"></span>
-                  <span class="mock-control"></span>
-                  <span class="mock-control"></span>
-                  <span class="mock-control"></span>
-                </div>
-              </div>
-            </div>
-            <div class="device phone">
-              <div class="screen">
-                <span class="shot-label">iPhone slot</span>
-                <div class="mock-song">
-                  <span class="mock-line chord"></span>
-                  <span class="mock-line"></span>
-                  <span class="mock-line"></span>
-                  <span class="mock-line chord" style="width: 72%"></span>
-                </div>
+                <img class="hero-device-image" src="assets/images/docs/library-ipad.png" alt="Songivo on iPad with a loaded song, song list, and performance controls visible.">
+                <span class="shot-label">Loaded song + library</span>
               </div>
             </div>
           </div>
@@ -91,17 +61,17 @@
             <article class="card">
               <span class="icon">01</span>
               <h3>Live performance mode</h3>
-              <p>Open charts full screen, control scrolling, move through the set, and keep the screen awake while you play.</p>
+              <p>Open charts full screen, control scrolling, move through the set, keep the screen awake, and use tap tempo or tuner access while you play.</p>
             </article>
             <article class="card">
               <span class="icon">02</span>
               <h3>Band libraries</h3>
-              <p>Create or join shared band spaces with independent songs, setlists, sync status, conflict review, and gig song push/listen.</p>
+              <p>Create or join shared band spaces with independent songs, setlists, sync status, invite limits, conflict review, and gig song push/listen.</p>
             </article>
             <article class="card">
               <span class="icon">03</span>
               <h3>Notes on the music</h3>
-              <p>Draw directly on ChordPro and PDF songs with persistent annotations that scale with your layout.</p>
+              <p>Draw directly on ChordPro and PDF songs with persistent annotations that scale with your layout and stay private for band songs.</p>
             </article>
           </div>
         </div>
@@ -113,20 +83,21 @@
             <div class="feature-copy">
               <p class="eyebrow">Song library</p>
               <h2>Bring in the charts you already use.</h2>
-              <p>Import ChordPro, plain text, and PDF files. Songivo can also search supported online providers, preview results, and handle duplicate import decisions.</p>
+              <p>Import ChordPro, plain text, PDF, image, and SongBook Pro files. Songivo previews imports, processes PDFs, searches Ultimate Guitar and E-Chords, and handles duplicate decisions before saving.</p>
               <div class="pill-list">
                 <span class="pill">ChordPro</span>
                 <span class="pill">PDF</span>
-                <span class="pill">Online import</span>
+                <span class="pill">Image to PDF</span>
+                <span class="pill">SBP</span>
                 <span class="pill">Tags</span>
               </div>
             </div>
             <div class="feature-visual">
               <div class="setlist-bars">
-                <span>File picker import</span>
-                <span>PDF preview and processing</span>
+                <span>File picker import for charts, PDFs, images, and SongBook Pro files</span>
+                <span>PDF preview, rotation, crop, contrast, and optimization</span>
+                <span>Ultimate Guitar and E-Chords search</span>
                 <span>Metadata, key, BPM, duration</span>
-                <span>Search by title, artist, content, and tags</span>
               </div>
             </div>
           </div>
@@ -151,7 +122,7 @@
             <div class="feature-copy">
               <p class="eyebrow">Sync and sharing</p>
               <h2>Your songs, your iCloud, your band.</h2>
-              <p>Personal libraries sync through iCloud. Band libraries use shared CloudKit zones, per-band sync, and conflict-aware review when offline edits collide.</p>
+              <p>Personal libraries sync through iCloud. Band libraries use shared CloudKit zones, per-band sync status, logs, and conflict-aware review when offline edits collide.</p>
             </div>
             <div class="feature-visual">
               <div class="setlist-bars">
@@ -169,14 +140,40 @@
         <div class="section-inner">
           <div class="section-head">
             <div>
-              <p class="eyebrow">One-time purchase</p>
-              <h2>Pricing placeholder.</h2>
+              <p class="eyebrow">Pricing</p>
+              <h2>Start free, unlock when your library grows.</h2>
             </div>
-            <p>Songivo is planned as a one-time App Store purchase with no subscription. Final App Store pricing and availability will be added here before launch.</p>
+            <p>Songivo includes 5 free song additions and 5 active bands. Deleting a song does not restore a free song addition; leaving a band frees one active band slot.</p>
           </div>
+          <div class="pricing-grid">
+            <article class="card price-card">
+              <span class="icon">Free</span>
+              <h3>Starter</h3>
+              <p class="price">Included</p>
+              <p>5 song additions, 5 active bands, and up to 25 invited members per band.</p>
+            </article>
+            <article class="card price-card">
+              <span class="icon">3.99&euro;</span>
+              <h3>Yearly</h3>
+              <p class="price">per year</p>
+              <p>Unlimited song additions. Active band slots remain separate.</p>
+            </article>
+            <article class="card price-card">
+              <span class="icon">14.99&euro;</span>
+              <h3>Lifetime</h3>
+              <p class="price">one-time unlock</p>
+              <p>Unlimited song additions for the lifetime of the app. Active band slots remain separate.</p>
+            </article>
+            <article class="card price-card">
+              <span class="icon">&euro;0.99</span>
+              <h3>Extra band slot</h3>
+              <p class="price">per extra slot</p>
+              <p>Each purchase adds one active band slot. Leaving or deleting a band frees an active slot.</p>
+            </article>
+          </div>
+          <p class="pricing-note">Yearly and lifetime purchases unlock unlimited song additions. Extra active band slots are separate repeatable purchases, so musicians can scale band work without changing the song-library plan.</p>
           <div class="action-row">
-            <span class="button disabled" aria-disabled="true">App Store coming soon</span>
-            <a class="button secondary" href="features.html">Explore features</a>
+            <span class="button disabled" aria-disabled="true">App Store link pending</span>
           </div>
         </div>
       </section>
@@ -185,7 +182,7 @@
     <footer class="footer">
       <div class="footer-inner">
         <span>Copyright 2026 Songivo. All rights reserved.</span>
-        <span><a href="privacy.html">Privacy</a> | <a href="contact.html">Contact</a></span>
+        <span><a href="features.html">Features</a> | <a href="help.html">Docs</a> | <a href="contact.html">Contact</a></span>
       </div>
     </footer>
     <script src="assets/js/site.js"></script>
