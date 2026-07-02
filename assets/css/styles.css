@@ -73,17 +73,12 @@ img {
 }
 
 .brand-mark {
-  align-items: center;
-  background: linear-gradient(145deg, #f2c46d, #a76237 55%, #201311);
-  border: 1px solid rgba(255, 236, 186, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 7px;
-  box-shadow: 0 10px 32px rgba(233, 173, 79, 0.28);
-  color: #130f0e;
-  display: inline-flex;
-  font-family: Georgia, serif;
-  font-size: 1rem;
+  box-shadow: 0 10px 32px rgba(54, 72, 255, 0.28);
+  display: block;
   height: 34px;
-  justify-content: center;
+  object-fit: cover;
   width: 34px;
 }
 
@@ -224,7 +219,7 @@ p {
   color: var(--dim);
   display: block;
   font-size: 0.9rem;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 
 .device-stage {
