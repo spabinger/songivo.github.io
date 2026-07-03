@@ -228,7 +228,7 @@ p {
 }
 
 .hero-song-stage {
-  min-height: 640px;
+  min-height: 650px;
 }
 
 .device {
@@ -248,7 +248,10 @@ p {
 }
 
 .hero-song-stage .device.tablet {
-  width: min(100%, 520px);
+  right: 0;
+  top: 0;
+  width: min(94%, 520px);
+  z-index: 1;
 }
 
 .device.phone {
@@ -256,6 +259,15 @@ p {
   bottom: 0;
   left: 0;
   width: min(38%, 180px);
+}
+
+.hero-song-stage .device.phone {
+  background: linear-gradient(180deg, #2b2725, #0b0908);
+  bottom: 22px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.58);
+  left: 0;
+  width: min(42%, 210px);
+  z-index: 2;
 }
 
 .screen {
@@ -273,6 +285,10 @@ p {
   object-fit: cover;
   object-position: top center;
   width: 100%;
+}
+
+.hero-phone-image {
+  object-position: top center;
 }
 
 .shot-label {
@@ -844,7 +860,13 @@ p {
   }
 
   .hero-song-stage {
-    min-height: 560px;
+    min-height: 600px;
+  }
+
+  .hero-song-stage .device.phone {
+    bottom: 10px;
+    left: 4%;
+    width: min(36%, 190px);
   }
 
   .hero-meta {
@@ -884,11 +906,23 @@ p {
   }
 
   .hero-song-stage .device.tablet {
-    width: 100%;
+    right: 0;
+    width: 94%;
   }
 
   .device.phone {
     width: 42%;
+  }
+
+  .hero-song-stage {
+    min-height: 520px;
+  }
+
+  .hero-song-stage .device.phone {
+    bottom: auto;
+    left: 0;
+    top: 72px;
+    width: min(42%, 168px);
   }
 
   .section {
