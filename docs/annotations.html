@@ -1,17 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Annotations - Songivo Documentation</title><meta name="description" content="Draw on ChordPro and PDF songs in Songivo with Apple Pencil or touch."><link rel="stylesheet" href="../assets/css/styles.css"></head>
-  <body>
-    <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../index.html"><span class="brand-mark">S</span>Songivo</a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button><div class="nav-links" data-nav-links><a href="../features.html">Features</a><a href="../help.html" aria-current="page">Docs</a><a href="../contact.html">Contact</a><a class="button secondary" href="../index.html#download">App Store link pending</a></div></nav></header>
-    <main class="doc-page"><aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="swiping.html">Swiping</a><a aria-current="page" href="annotations.html">Annotations</a><a href="icloud-sync.html">iCloud Sync</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
-      <article class="doc-article"><p class="eyebrow">Markups</p><h1>Annotations</h1><p class="doc-lede">Annotations let you mark charts without changing the underlying song content.</p>
-        <figure class="doc-shot"><img src="../assets/images/docs/annotations-snap-toggle-ipad.png" alt="Songivo annotation toolbar with Snap highlight enabled"><figcaption>Annotation mode keeps the Snap highlight toggle, undo, redo, and clear actions above the song.</figcaption></figure>
-        <figure class="doc-shot"><img src="../assets/images/docs/annotations-snap-highlight-ipad.png" alt="Turn the Lights Up with a snap highlight on the chorus lyric"><figcaption>Snap highlight turns a highlighter stroke into text-locked highlight blocks, so the mark follows the lyric as the ChordPro layout changes.</figcaption></figure>
-        <section><h2>Draw on a song</h2><ol class="doc-steps"><li>Open a ChordPro or PDF song.</li><li>Turn on annotation mode.</li><li>Use Apple Pencil or touch to draw, highlight, or erase.</li><li>Leave annotation mode before using performance gestures again.</li></ol></section>
-        <section><h2>Use Snap highlight</h2><p>Snap highlight is available for ChordPro songs. When it is on, Songivo reads the highlighter stroke as a text selection and stores the highlight against the matching chord or lyric fragments. That keeps highlights aligned when font size, columns, zoom, or device orientation changes.</p><ul class="doc-list"><li>Turn on annotation mode.</li><li>Keep Snap highlight enabled in the annotation toolbar.</li><li>Use the highlighter across the lyric or chord text you want to mark.</li><li>Use the eraser or Clear all drawings when you want to remove highlights.</li></ul></section>
-        <section><h2>How annotations are saved</h2><ul class="doc-list"><li>PDF annotations are saved with the PDF song context.</li><li>ChordPro annotations scale as the content size changes.</li><li>Band-song annotations stay private per user even when the song itself is shared.</li></ul></section>
-        <section><h2>Clear annotations</h2><p>Use the clear action only when you want to remove saved marks for the active song. This affects the current annotation context, not every song in the library.</p></section>
-        <nav class="doc-next" aria-label="Article navigation"><a href="swiping.html">Previous: Swiping</a><a href="icloud-sync.html">Next: iCloud Sync</a></nav></article></main>
-    <footer class="footer"><div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span><span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div></footer><script src="../assets/js/site.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Annotations - Songivo Documentation</title>
+	<meta name="description" content="Draw on ChordPro and PDF songs in Songivo with Apple Pencil or touch, including Snap highlight for ChordPro.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="nav" aria-label="Main navigation">
+			<a class="brand" href="../index.html">
+				<img class="brand-mark" src="../assets/images/songivo_icon.png" alt="">
+					Songivo
+			</a>
+			<button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
+			<div class="nav-links" data-nav-links><a href="../features.html">Features</a>
+		          <a href="../help.html" aria-current="page">Docs</a>
+		          <a href="../contact.html">Contact</a>
+				  <a href="../privacy.html">Privacy</a>
+		          <a class="button secondary" href="../index.html#download">App Store link pending</a></div>
+		</nav>
+	</header>
+	<main class="doc-page">
+		<aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="tuner-metronome.html">Tuner &amp; Metronome</a><a href="swiping.html">Swiping</a><a aria-current="page" href="annotations.html">Annotations</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
+		<article class="doc-article">
+			<p class="eyebrow">Markups</p>
+			<h1>Annotations</h1>
+			<p class="doc-lede">Annotations let you mark charts on top of the song content.</p>
+			<p>Use annotations for rehearsal marks, reminders, highlights, and personal performance cues.</p>
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-annotations-ipad.png" alt="Songivo annotation mode with Snap highlight and PencilKit tools visible">
+				<figcaption>Annotation example.</figcaption>
+			</figure>
+			<section>
+				<h2>Draw on a song</h2>
+				
+				<ol class="doc-steps">
+					<li>Open a ChordPro or PDF song.</li>
+					<li>Turn on annotation mode.</li>
+					<li>Use Apple Pencil or touch to draw, highlight, or erase.</li>
+					<li>Use undo and redo while reviewing marks.</li>
+					<li>Long press on a pencil for changing width and transparency of the annotation</li>
+					<li>Tap Done before using performance gestures again.</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Use Snap highlight</h2>
+				
+				<p>Snap highlight is available for ChordPro songs. When it is on, Songivo reads the highlighter stroke as a text selection and stores the highlight against matching chord or lyric fragments. That keeps highlights aligned when font size, columns, zoom, or device orientation changes.</p>
+				
+				<ul class="doc-list">
+					<li>Turn on annotation mode.</li>
+					<li>Keep Snap highlight enabled in the annotation toolbar.</li>
+					<li>Use the highlighter across the lyric or chord text you want to mark.</li>
+					<li>Use the eraser or Clear all drawings when you want to remove highlights.</li>
+				</ul>
+			</section>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-annotations-highlight-before.png" alt="Snap mode while drawing">
+				
+				<figcaption>Snap mode while drawing.</figcaption>
+			</figure>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-annotations-highlight-before.png" alt="Snap mode after release">
+				
+				<figcaption>Snap mode after release.</figcaption>
+			</figure>
+			
+			<section>
+				<h2>How annotations are saved</h2>
+				
+				<ul class="doc-list">
+					<li>PDF annotations are saved with the PDF song context.</li>
+					<li>ChordPro annotations scale as content size changes.</li>
+					<li>Band-song annotations stay private per user even when the shared song itself is common.</li>
+					<li>Clear annotations only when you intend to remove saved marks for the active song context.</li>
+				</ul>
+			</section>
+			
+			<nav class="doc-next" aria-label="Article navigation"><a href="swiping.html">Previous: Swiping</a>
+		          <a href="band-libraries.html">Next: Band Libraries</a></nav>
+		</article>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span>
+	        <span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div>
+	</footer>
+    <script src="../assets/js/site.js"></script>
+</body>
 </html>

@@ -1,15 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ChordPro - Songivo Documentation</title><meta name="description" content="Use ChordPro songs in Songivo with directives, chords, sections, transposition, notation modes, and display settings."><link rel="stylesheet" href="../assets/css/styles.css"></head>
-  <body>
-    <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../index.html"><span class="brand-mark">S</span>Songivo</a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button><div class="nav-links" data-nav-links><a href="../features.html">Features</a><a href="../help.html" aria-current="page">Docs</a><a href="../contact.html">Contact</a><a class="button secondary" href="../index.html#download">App Store link pending</a></div></nav></header>
-    <main class="doc-page"><aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a aria-current="page" href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a href="icloud-sync.html">iCloud Sync</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
-      <article class="doc-article"><p class="eyebrow">Charts</p><h1>ChordPro</h1><p class="doc-lede">ChordPro songs give Songivo editable lyrics, chords, sections, and metadata that can be transposed without rewriting the original chart.</p>
-        <figure class="doc-shot"><img src="../assets/images/docs/chordpro-demo-ipad.png" alt="Turn the Lights Up ChordPro song in Songivo"><figcaption>ChordPro display supports readable stage layouts, zoom, notation modes, and performance controls for the demo song.</figcaption></figure>
-        <section><h2>Edit a ChordPro song</h2><ol class="doc-steps"><li>Open the song and choose Edit.</li><li>Update lyrics, chords, sections, or directives.</li><li>Use the assist toolbar for common section and directive helpers.</li><li>Save and return to the viewer to check the rendered chart.</li></ol></section>
-        <section><h2>Transpose and notation</h2><p>Songivo can display transposed chords without changing the stored source text. Use song-level transpose for the default chart and setlist slot transpose when one show needs a different key.</p><ul class="doc-list"><li>Standard notation for common chord names.</li><li>Nashville notation for number-based charts.</li><li>Roman notation for functional analysis workflows.</li></ul></section>
-        <section><h2>Display options</h2><p>Adjust font size, color themes, chord and lyric styling, split-page behavior, and chord block alignment from the song and appearance settings.</p></section>
-        <nav class="doc-next" aria-label="Article navigation"><a href="import-songs.html">Previous: Importing Songs</a><a href="pdf-workflow.html">Next: PDFs</a></nav></article></main>
-    <footer class="footer"><div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span><span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div></footer><script src="../assets/js/site.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>ChordPro - Songivo Documentation</title>
+	
+	<meta name="description" content="Use ChordPro songs in Songivo with directives, chords, sections, transposition, notation modes, and display settings.">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">	
+		
+	<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="nav" aria-label="Main navigation">
+			<a class="brand" href="../index.html">
+			<img class="brand-mark" src="../assets/images/songivo_icon.png" alt="">
+				Songivo
+			</a>
+
+			
+			<button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
+			
+			<div class="nav-links" data-nav-links><a href="../features.html">Features</a>
+		          <a href="../help.html" aria-current="page">Docs</a>
+		          <a href="../contact.html">Contact</a>
+			  <a href="../privacy.html">Privacy</a>
+		          <a class="button secondary" href="../index.html#download">App Store link pending</a></div>
+		</nav>
+	</header>
+	
+	<main class="doc-page">
+		<aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a aria-current="page" href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="tuner-metronome.html">Tuner &amp; Metronome</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
+		
+		<article class="doc-article">
+			<p class="eyebrow">Charts</p>
+			
+			<h1>ChordPro</h1>
+			
+			<p class="doc-lede">ChordPro songs give Songivo editable lyrics, chords, sections, metadata, transposition, and flexible stage layouts.</p>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-viewer-ipad.png" alt="Turn the Lights Up rendered as a ChordPro chart in Songivo">
+				
+				<figcaption>Rendered ChordPro keeps chords aligned with lyrics while still allowing font, layout, transpose, and performance controls.</figcaption>
+			</figure>
+			
+			<section>
+				<h2>Edit a ChordPro song</h2>
+				
+				<ol class="doc-steps">
+					<li>Open the song and enter edit mode using the icon from the top left menu.</li>
+					<li>Update fields as requred.</li>
+					<li>Clean up the ChordPro source text with section directives and chord placement.</li>
+					<li>Use linked songs when related charts should travel with the main song.</li>
+					<li>Save and check the rendered chart before rehearsal.</li>
+				</ol>
+			</section>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-edit-song.png" alt="Songivo editor with metadata, transpose, linked songs, and ChordPro source fields">
+				
+				<figcaption>Edit metadata and source text in one place, then return to the viewer to confirm the rendered result.</figcaption>
+			</figure>
+			
+			<section>
+				<h2>Transpose and notation</h2>				
+				<p>Songivo can display transposed chords without rewriting the stored source text.</p>				
+				<ul class="doc-list">
+					<li>Standard notation is best for common chord charts.</li>
+					<li>Nashville notation supports number-based band workflows.</li>
+					<li>Roman notation supports functional analysis and teaching contexts.</li>
+				</ul>
+			</section>
+			
+			
+			
+			<section>
+				<h2>Display options</h2>
+				
+				<p>Use song and appearance settings to adjust font size, ChordPro layout mode, chord and lyric colors, column behavior, split-page behavior, and chord block alignment.</p>
+			</section>
+			
+			<nav class="doc-next" aria-label="Article navigation"><a href="import-songs.html">Previous: Importing Songs</a>
+		          <a href="pdf-workflow.html">Next: PDFs</a></nav>
+		</article>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span>
+	        <span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div>
+	</footer>
+    <script src="../assets/js/site.js"></script>
+</body>
 </html>

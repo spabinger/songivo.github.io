@@ -30,7 +30,8 @@ body {
     radial-gradient(circle at 86% 8%, rgba(101, 212, 199, 0.1), transparent 28rem),
     linear-gradient(180deg, #130f0e 0%, var(--stage) 42%, #090807 100%);
   color: var(--ink);
-  font-family: Avenir Next, Optima, Candara, Segoe UI, sans-serif;
+  font-family: 'Manrope';
+  --font-family: Avenir Next, Optima, Candara, Segoe UI, sans-serif;
   line-height: 1.6;
 }
 
@@ -73,13 +74,10 @@ img {
 }
 
 .brand-mark {
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 7px;
-  box-shadow: 0 10px 32px rgba(54, 72, 255, 0.28);
   display: block;
-  height: 34px;
+  height: 42px;
   object-fit: cover;
-  width: 34px;
+  width: 42px;
 }
 
 .nav-links {
@@ -162,10 +160,11 @@ img {
 h1,
 h2,
 h3 {
-  font-family: Georgia, Iowan Old Style, serif;
+  font-family: Inter, Iowan Old Style, serif;
   letter-spacing: 0;
   line-height: 1.05;
   margin: 0;
+  padding-bottom: 0.8rem;;
 }
 
 h1 {
@@ -681,6 +680,7 @@ p {
 .doc-lede {
   font-size: clamp(1.08rem, 2vw, 1.32rem);
   margin-top: 18px;
+  margin-bottom: 0.3rem;;
   max-width: 720px;
 }
 

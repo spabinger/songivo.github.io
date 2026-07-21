@@ -1,15 +1,102 @@
 <!doctype html>
 <html lang="en">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Setlists - Songivo Documentation</title><meta name="description" content="Create and manage Songivo setlists with performance dates, slot notes, reordering, transpose overrides, and exports."><link rel="stylesheet" href="../assets/css/styles.css"></head>
-  <body>
-    <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../index.html"><span class="brand-mark">S</span>Songivo</a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button><div class="nav-links" data-nav-links><a href="../features.html">Features</a><a href="../help.html" aria-current="page">Docs</a><a href="../contact.html">Contact</a><a class="button secondary" href="../index.html#download">App Store link pending</a></div></nav></header>
-    <main class="doc-page"><aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a aria-current="page" href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a href="icloud-sync.html">iCloud Sync</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
-      <article class="doc-article"><p class="eyebrow">Shows</p><h1>Setlists</h1><p class="doc-lede">Setlists turn your library into the order you need for rehearsal, worship, theater, lessons, or a gig.</p>
-        <figure class="doc-shot"><img src="../assets/images/docs/setlist-editor-ipad.png" alt="Setlist editor in Songivo"><figcaption>Arrange slots, add notes, and keep the performance order separate from the library.</figcaption></figure>
-        <section><h2>Create a setlist</h2><ol class="doc-steps"><li>Choose the library or band context for the setlist.</li><li>Create a new setlist and name it clearly.</li><li>Add a performance date when the set is tied to an event.</li><li>Add songs from the selected library.</li><li>Drag songs into the order you will play them.</li></ol></section>
-        <section><h2>Slot details</h2><ul class="doc-list"><li>Add slot notes for intros, cues, transitions, capo reminders, or leader notes.</li><li>Use a per-slot transpose override when one song needs a different key for one set.</li><li>Use multi-select actions when exporting or deleting several slots from the panel.</li></ul></section>
-        <section><h2>Lifecycle</h2><p>Rename, duplicate, or delete setlists as your repertoire changes. Duplicate a setlist when a new show starts from a previous night but should diverge later.</p></section>
-        <nav class="doc-next" aria-label="Article navigation"><a href="pdf-workflow.html">Previous: PDFs</a><a href="live-mode.html">Next: Live Performance</a></nav></article></main>
-    <footer class="footer"><div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span><span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div></footer><script src="../assets/js/site.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Setlists - Songivo Documentation</title>
+	
+	<meta name="description" content="Create and manage Songivo setlists with performance dates, slot notes, reordering, transpose overrides, and exports.">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">	
+	
+	<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="nav" aria-label="Main navigation">
+			<a class="brand" href="../index.html">
+				<img class="brand-mark" src="../assets/images/songivo_icon.png" alt="">
+					Songivo
+			</a>
+			
+			<button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
+			
+			<div class="nav-links" data-nav-links><a href="../features.html">Features</a>
+		          <a href="../help.html" aria-current="page">Docs</a>
+		          <a href="../contact.html">Contact</a>
+			  <a href="../privacy.html">Privacy</a>
+		          <a class="button secondary" href="../index.html#download">App Store link pending</a></div>
+		</nav>
+	</header>
+	
+	<main class="doc-page">
+		<aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a aria-current="page" href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="tuner-metronome.html">Tuner &amp; Metronome</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
+		
+		<article class="doc-article">
+			<p class="eyebrow">Shows</p>
+			
+			<h1>Setlists</h1>
+			
+			<p class="doc-lede">Setlists turn your library into the order you need for rehearsal, worship, theater, lessons, or a gig.</p>
+			
+			<p>A setlist stores performance order separately from the library. The same song can appear in many setlists without duplicating the song record.</p>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-setlist-overview.png" alt="Songivo setlist named Summer Rehearsal with three demo songs and share controls">
+				
+				<figcaption>A setlist can hold ordered songs, edit controls, share/export access, and progress reset actions.</figcaption>
+			</figure>
+			
+			<section>
+				<h2>Create a setlist</h2>
+				
+				<ol class="doc-steps">
+					<li>Choose the personal or band library that should own the setlist.</li>
+					<li>Open Sets and create a new setlist with a clear name.</li>
+					<li>Add a performance date when the set is tied to an event.</li>
+					<li>Use Add songs to choose charts from the selected library.</li>
+					<li>Review the order before rehearsal and adjust it as the show changes.</li>
+				</ol>
+			</section>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-setlist-add.png" alt="Songivo setlist named Summer Rehearsal with three demo songs and share controls">
+				
+				<figcaption>Use the Songs menu in Setlists to add or remove songs. Linked songs are automatically added when the main/parent song is added to the setlist.</figcaption>
+			</figure>
+			
+			
+			<section>
+				<h2>Slot details / slot notes</h2>
+				
+				<ul class="doc-list">
+					<li>Add slot notes for intros, cues, transitions, capo reminders, or leader notes.</li>
+					<li>Reorder songs by long pressing on a song and dragging it to the new position.</li>					
+				</ul>
+			</section>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-setlist-notes.png" alt="Songivo library and song actions visible beside an open chart">
+				
+				<figcaption>Add notes to songs in a setlist.</figcaption>
+			</figure>
+			
+			
+			
+			<nav class="doc-next" aria-label="Article navigation"><a href="pdf-workflow.html">Previous: PDFs</a>
+		          <a href="live-mode.html">Next: Live Performance</a></nav>
+		</article>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span>
+	        <span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div>
+	</footer>
+    <script src="../assets/js/site.js"></script>
+</body>
 </html>

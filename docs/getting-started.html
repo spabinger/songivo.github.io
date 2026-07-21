@@ -4,65 +4,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Getting Started - Songivo Documentation</title>
-    <meta name="description" content="Start using Songivo on iPhone and iPad: create a library, import songs, open the viewer, and prepare the app for rehearsal.">
+    <meta name="description" content="Start using Songivo on iPhone and iPad: open the library, import songs, edit charts, create setlists, and prepare for rehearsal.">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">	
+
     <link rel="stylesheet" href="../assets/css/styles.css">
   </head>
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="../index.html"><span class="brand-mark">S</span>Songivo</a>
+        <a class="brand" href="../index.html">
+			<img class="brand-mark" src="../assets/images/songivo_icon.png" alt="">
+			Songivo
+		</a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
         <div class="nav-links" data-nav-links>
           <a href="../features.html">Features</a>
           <a href="../help.html" aria-current="page">Docs</a>
           <a href="../contact.html">Contact</a>
+		  <a href="../privacy.html">Privacy</a>
           <a class="button secondary" href="../index.html#download">App Store link pending</a>
         </div>
       </nav>
     </header>
 
     <main class="doc-page">
-      <aside class="doc-nav" aria-label="Documentation"><a aria-current="page" href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a href="icloud-sync.html">iCloud Sync</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
+      <aside class="doc-nav" aria-label="Documentation"><a aria-current="page" href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="tuner-metronome.html">Tuner &amp; Metronome</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
 
       <article class="doc-article">
         <p class="eyebrow">Start here</p>
         <h1>Getting Started</h1>
-        <p class="doc-lede">Songivo is built around one idea: keep your music organized before the show and readable when you are playing.</p>
+        <p class="doc-lede">Songivo is built to provide you with the best experience for accessing and managing your Songbook.</p>
+
+          <p>Start in My Library for personal songs. Use the song viewer for rehearsal, then add setlists, annotations, and performance tools as your library grows.</p>
 
         <figure class="doc-shot">
-          <img src="../assets/images/docs/library-ipad.png" alt="Songivo library on iPad">
-          <figcaption>The library is the starting point for songs, setlists, imports, and live playback.</figcaption>
+          <img src="../assets/images/docs/docs-start-ipad.png" alt="Songivo start screen with no song selected and actions for browsing, creating, and importing songs">
+          <figcaption>The first screen gives you direct paths into browsing, creating, importing, settings, tuner, metronome, and live display controls.</figcaption>
         </figure>
 
         <section>
-          <h2>First steps</h2>
-          <ol class="doc-steps">
-            <li>Open Songivo and complete any first-run profile setup shown by the app.</li>
-            <li>Choose My Library for personal songs, or select a band library when working with shared material.</li>
-            <li>Import a ChordPro, text, or PDF song.</li>
-            <li>Open the song, check the title, artist, key, BPM, and display settings.</li>
-            <li>Create a setlist when you are preparing songs for rehearsal or a show.</li>
-          </ol>
+          <h2>First useful setup</h2>
+<ol class="doc-steps"><li>Open the library and confirm the correct library context is selected.</li><li>Start with the bundled demo songs or import one ChordPro, text, PDF, image, or SongBook Pro file.</li><li>Open a song and check title, artist, key, BPM, duration, song number, and tags.</li><li>Create a setlist when you need a rehearsal or show order instead of renaming songs.</li><li>Open Settings once to review sync, appearance, editor fields, metronome, and purchase status.</li></ol>
         </section>
+
+        <figure class="doc-shot">
+          <img src="../assets/images/docs/docs-library-ipad.png" alt="Songivo library with demo songs including Turn the Lights Up, Riverside, Morning Light, and Chord Showcase">
+          <figcaption>The library panel keeps songs searchable while the selected chart remains visible beside it on iPad.</figcaption>
+        </figure>
 
         <section>
           <h2>Main areas</h2>
           <div class="doc-callout-grid">
-            <div class="doc-callout"><strong>Library</strong><span>Search, filter, tag, favorite, duplicate, delete, and open songs.</span></div>
-            <div class="doc-callout"><strong>Viewer</strong><span>Read ChordPro or PDF songs with performance controls nearby.</span></div>
-            <div class="doc-callout"><strong>Setlists</strong><span>Arrange a night of music with slot notes and transpose overrides.</span></div>
-            <div class="doc-callout"><strong>Settings</strong><span>Adjust appearance, sync, diagnostics, band libraries, and recovery tools.</span></div>
+            <div class="doc-callout"><strong>Library</strong><span>Search, filter, favorite, copy, export, and open songs in the selected library.</span></div>
+            <div class="doc-callout"><strong>Viewer</strong><span>Read ChordPro or PDF charts with transpose, tuner, annotation, and live controls nearby.</span></div>
+            <div class="doc-callout"><strong>Setlists</strong><span>Build the order for rehearsal or a show, including slot notes and per-slot transpose choices.</span></div>
+            <div class="doc-callout"><strong>Settings</strong><span>Manage appearance, sync, band libraries, purchases, metronome sounds, and diagnostics.</span></div>
           </div>
         </section>
 
+        <figure class="doc-shot">
+          <img src="../assets/images/docs/docs-viewer-ipad.png" alt="Turn the Lights Up open in the Songivo ChordPro viewer on iPad">
+          <figcaption>After you select a song, the viewer becomes the center of the workflow: read, edit, transpose, annotate, tune, or enter live mode.</figcaption>
+        </figure>
+
         <section>
           <h2>Good setup habits</h2>
-          <ul class="doc-list">
-            <li>Add useful metadata early, especially artist, key, BPM, duration, song number, and tags.</li>
-            <li>Use setlists for performance order instead of renaming songs for each show.</li>
-            <li>Keep personal songs in My Library and shared band material in the matching band library.</li>
-            <li>Check iCloud availability before relying on sync between devices.</li>
-          </ul>
+<ul class="doc-list"><li>Add metadata early, especially artist, key, BPM, duration, song number, and tags.</li><li>Keep My Library and band libraries separate unless you intentionally copy material between them.</li><li>Use setlists for performance order instead of changing song titles for each event.</li><li>Open important songs before the show to confirm font size, scroll speed, notes, and PDF zoom.</li></ul>
         </section>
 
         <nav class="doc-next" aria-label="Article navigation">

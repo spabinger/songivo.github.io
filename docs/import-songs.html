@@ -1,16 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Importing Songs - Songivo Documentation</title><meta name="description" content="Import ChordPro, text, PDF, image, SBP, Ultimate Guitar, and E-Chords results into Songivo."><link rel="stylesheet" href="../assets/css/styles.css"></head>
-  <body>
-    <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../index.html"><span class="brand-mark">S</span>Songivo</a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button><div class="nav-links" data-nav-links><a href="../features.html">Features</a><a href="../help.html" aria-current="page">Docs</a><a href="../contact.html">Contact</a><a class="button secondary" href="../index.html#download">App Store link pending</a></div></nav></header>
-    <main class="doc-page"><aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a aria-current="page" href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a href="icloud-sync.html">iCloud Sync</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
-      <article class="doc-article"><p class="eyebrow">Files and search</p><h1>Importing Songs</h1><p class="doc-lede">Songivo imports ChordPro, plain text, PDF lead sheets, image files, SongBook Pro packages, and online search results into the selected library.</p>
-        <figure class="doc-shot"><img src="../assets/images/docs/import-sheet-ipad.png" alt="Songivo import screen"><figcaption>The import sheet accepts ChordPro, text, PDF, image, and SBP files from the selected library context.</figcaption></figure>
-        <section><h2>Import from files</h2><ol class="doc-steps"><li>Open the import flow from the library or quick actions.</li><li>Select one or more ChordPro, text, PDF, image, or SBP files.</li><li>Review any preview or duplicate prompt shown by Songivo.</li><li>Save the songs into the selected library.</li><li>Add tags, key, BPM, duration, and other metadata after import.</li></ol></section>
-        <section><h2>Import from online search</h2><p>Use Ultimate Guitar or E-Chords search when you want to find a chart from inside Songivo. Preview the result before saving it, and keep provider selections tuned to the sources you actually use.</p></section>
-        <section><h2>Duplicate handling</h2><ul class="doc-list"><li>Keep both when you need a second arrangement.</li><li>Merge metadata when the imported chart should enrich an existing song.</li><li>Cancel when the match is not the song you intended to import.</li></ul></section>
-        <section><h2>Free song additions</h2><p>Creating or importing a song uses one free song addition until unlimited song additions are unlocked. Deleting a song later does not restore a free addition, so preview imports before saving.</p></section>
-        <nav class="doc-next" aria-label="Article navigation"><a href="link-songs.html">Previous: Link Songs</a><a href="chordpro.html">Next: ChordPro</a></nav></article></main>
-    <footer class="footer"><div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span><span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div></footer><script src="../assets/js/site.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Importing Songs - Songivo Documentation</title>
+	
+	<meta name="description" content="Import ChordPro, text, PDF, image, SBP, Ultimate Guitar, and E-Chords results into Songivo.">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">	
+
+	<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="nav" aria-label="Main navigation"><a class="brand" href="../index.html">
+			<img class="brand-mark" src="../assets/images/songivo_icon.png" alt="">
+				Songivo
+			</a>
+			
+			<button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
+			
+			<div class="nav-links" data-nav-links><a href="../features.html">Features</a>
+		          <a href="../help.html" aria-current="page">Docs</a>
+		          <a href="../contact.html">Contact</a>
+		  <a href="../privacy.html">Privacy</a>
+		          <a class="button secondary" href="../index.html#download">App Store link pending</a></div>
+		</nav>
+	</header>
+	
+	<main class="doc-page">
+		<aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a aria-current="page" href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="tuner-metronome.html">Tuner &amp; Metronome</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
+		
+		<article class="doc-article">
+			<p class="eyebrow">Files and search</p>
+			
+			<h1>Importing Songs</h1>
+			
+			<p class="doc-lede">Songivo imports local files and online search results into the currently selected library.</p>
+			
+			<p>Check the library context before importing. A song imported into My Library is personal; a song imported into a band library belongs to that shared band context.</p>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-import-start.png" alt="Songivo import sheet on the File tab with Choose Files visible">
+				
+				<figcaption>Use the import link to start importing new songs.</figcaption>
+			</figure>
+			
+			<section>
+				<h2>Import from files</h2>
+				
+				<ol class="doc-steps">
+					<li>Open Import Songs from the start screen, or library panel.</li>
+					<li>Choose the File tab.</li>
+					<li>Select one or more supported files.</li>
+					<li>Review any preview, PDF processing, or duplicate prompt shown by Songivo.</li>
+					<li>Save the imported songs and then adjust metadata such as key, BPM, duration, tags, and song number.</li>
+				</ol>
+			</section>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-import-file.png" alt="Songivo file import">
+				
+				<figcaption>Import files</figcaption>
+			</figure>
+			
+			<section>
+				<h2>Import from online search</h2>
+				
+				<ul class="doc-list">
+					<li>Search by title or artist using the Online tab.</li>
+					<li>Use provider toggles to search the sources you actually want.</li>
+					<li>Preview the result before importing so you can avoid a bad chart or a duplicate.</li>
+					<li>Clean up metadata after import; web sources often need title, key, BPM, or formatting review.</li>
+				</ul>
+			</section>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-import-online.png" alt="Songivo online import">
+				
+				<figcaption>Import songs from online resources.</figcaption>
+			</figure>
+			
+			<section>
+				<h2>Free song additions</h2>
+				
+				<p>Creating or importing a song uses one free song addition until unlimited song additions are unlocked. Deleting a song later does not restore that free addition, so preview imports before saving.</p>
+			</section>
+			
+			<nav class="doc-next" aria-label="Article navigation"><a href="link-songs.html">Previous: Link Songs</a>
+		          <a href="chordpro.html">Next: ChordPro</a></nav>
+		</article>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span>
+	        <span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div>
+	</footer>
+    <script src="../assets/js/site.js"></script>
+</body>
 </html>

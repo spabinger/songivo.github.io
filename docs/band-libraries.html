@@ -1,16 +1,108 @@
 <!doctype html>
 <html lang="en">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Band Libraries - Songivo Documentation</title><meta name="description" content="Create, join, and manage Songivo band libraries with shared songs, shared setlists, members, invites, sync logs, and conflict review."><link rel="stylesheet" href="../assets/css/styles.css"></head>
-  <body>
-    <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../index.html"><span class="brand-mark">S</span>Songivo</a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button><div class="nav-links" data-nav-links><a href="../features.html">Features</a><a href="../help.html" aria-current="page">Docs</a><a href="../contact.html">Contact</a><a class="button secondary" href="../index.html#download">App Store link pending</a></div></nav></header>
-    <main class="doc-page"><aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a href="icloud-sync.html">iCloud Sync</a><a aria-current="page" href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
-      <article class="doc-article"><p class="eyebrow">Teams</p><h1>Band Libraries</h1><p class="doc-lede">Band libraries keep shared songs and setlists separate from My Library, so collaboration does not overwrite personal material.</p>
-        <figure class="doc-shot"><img src="../assets/images/docs/band-library-ipad.png" alt="Songivo settings with sync and band navigation"><figcaption>Settings is the starting point for sync status, diagnostics, and band library management.</figcaption></figure>
-        <section><h2>Create or join a band</h2><ol class="doc-steps"><li>Open Settings and choose the band sharing area.</li><li>Create a band when you are the leader, or join from an invite when another member created it.</li><li>Select the band library before importing or copying shared songs.</li><li>Use sync status and logs when shared changes do not appear yet.</li></ol></section>
-        <section><h2>Shared library rules</h2><ul class="doc-list"><li>Band songs and setlists live in the selected band library.</li><li>My Library and each band library remain independent.</li><li>Copy songs explicitly when material should move between personal and band contexts.</li><li>Leader-only deletion protects the shared band library from accidental removal.</li></ul></section>
-        <section><h2>Active band limits</h2><p>The free tier includes 5 active bands. Leaving or deleting a band frees an active band slot, and each extra active-band purchase adds one more slot.</p></section>
-        <section><h2>Conflicts</h2><p>Offline or concurrent shared edits can be marked as Conflict needs review. Open the review flow and choose which local fields to keep versus the synced band version.</p></section>
-        <nav class="doc-next" aria-label="Article navigation"><a href="icloud-sync.html">Previous: iCloud Sync</a><a href="gig-mode.html">Next: Gig Mode</a></nav></article></main>
-    <footer class="footer"><div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span><span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div></footer><script src="../assets/js/site.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Band Libraries - Songivo Documentation</title>
+	
+	<meta name="description" content="Create, join, and manage Songivo band libraries with shared songs, setlists, members, invites, sync logs, and conflict review.">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">	
+	
+	<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="nav" aria-label="Main navigation">
+			<a class="brand" href="../index.html">
+				<img class="brand-mark" src="../assets/images/songivo_icon.png" alt="">
+				Songivo
+			</a>
+			
+			<button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
+			
+			<div class="nav-links" data-nav-links><a href="../features.html">Features</a>
+		          <a href="../help.html" aria-current="page">Docs</a>
+		          <a href="../contact.html">Contact</a>
+				  <a href="../privacy.html">Privacy</a>
+		          <a class="button secondary" href="../index.html#download">App Store link pending</a></div>
+		</nav>
+	</header>
+	
+	<main class="doc-page">
+		<aside class="doc-nav" aria-label="Documentation"><a href="getting-started.html">Getting Started</a><a href="song-library.html">Song Library</a><a href="link-songs.html">Link Songs</a><a href="import-songs.html">Importing Songs</a><a href="chordpro.html">ChordPro</a><a href="pdf-workflow.html">PDFs</a><a href="setlists.html">Setlists</a><a href="live-mode.html">Live Performance</a><a href="tuner-metronome.html">Tuner &amp; Metronome</a><a href="swiping.html">Swiping</a><a href="annotations.html">Annotations</a><a aria-current="page" href="band-libraries.html">Band Libraries</a><a href="gig-mode.html">Gig Mode</a><a href="export-share.html">Exporting</a><a href="settings.html">Settings</a><a href="troubleshooting.html">Troubleshooting</a><a href="faq.html">FAQ</a></aside>
+		
+		<article class="doc-article">
+			<p class="eyebrow">Teams</p>
+			
+			<h1>Band Libraries</h1>
+			
+			<p class="doc-lede">Band libraries keep songs and setlists separate from other libraries (e.g., My Library), so collaboration does not overwrite material of other bands.</p>
+			
+			<p>Use My Library for personal material and a band library for charts that should be shared with a band. Copy songs explicitly when songs should move between contexts.</p>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-settings-ipad.jpg" alt="Songivo Settings with sidebar entries for iCloud Sync, Band, Song, Color, Metronome, Purchases, and Documentation">
+				
+				<figcaption>Band management starts in Settings, while library switching happens from the song and setlist panel.</figcaption>
+			</figure>
+			
+			<section>
+				<h2>Create or join a band</h2>
+				
+				<ol class="doc-steps">
+					<li>Open Settings and choose Band.</li>
+					<li>Create a band when you are the leader, or join from an invite when another member created it.</li>
+					<li>Select the band library before importing or copying shared songs.</li>
+					<li>Use sync status and logs when shared changes do not appear yet.</li>
+					<li>Confirm the active library before rehearsing so you do not edit a personal copy by mistake.</li>
+				</ol>
+			</section>
+			
+			<figure class="doc-shot">
+				<img src="../assets/images/docs/docs-band-create.png" alt="Create a new band">
+				
+				<figcaption>The library switcher is the practical checkpoint before adding, importing, copying, or performing shared material.</figcaption>
+			</figure>
+			
+			<section>
+				<h2>Shared library rules</h2>
+				
+				<ul class="doc-list">
+					<li>Band songs and setlists live in the selected band library.</li>
+					<li>My Library and each band library remain independent.</li>
+					<li>Songs move between libraries only through explicit copy actions.</li>
+					<li>Leader-only deletion protects the shared band library from accidental removal.</li>
+					<li>Band-song annotations stay private per user.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Active band limits</h2>
+				
+				<p>The free tier includes 5 active bands. Leaving or deleting a band frees an active band slot, and each &euro;0.99 extra active-band purchase adds one more slot.</p>
+			</section>
+			
+			<section>
+				<h2>Conflicts</h2>
+				
+				<p>Offline or concurrent shared edits can be marked as Conflict needs review. Open the review flow and choose which local fields to keep versus the synced band version.</p>
+			</section>
+			
+			<nav class="doc-next" aria-label="Article navigation"><a href="annotations.html">Previous: Annotations</a>
+		          <a href="gig-mode.html">Next: Gig Mode</a></nav>
+		</article>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span>
+	        <span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div>
+	</footer>
+    <script src="../assets/js/site.js"></script>
+</body>
 </html>
