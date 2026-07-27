@@ -7,7 +7,7 @@
 	
 	<title>Settings - Songivo Documentation</title>
 	
-	<meta name="description" content="Adjust Songivo appearance, layout, optional fields, purchases, sync status, band settings, diagnostics, and recovery options.">
+	<meta name="description" content="Make Songivo your own with controls for your profile, song display, colors, metronome, editor, libraries, and more.">
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">	
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
@@ -18,10 +18,12 @@
 </head>
 <body>
 	<header class="site-header">
-		<nav class="nav" aria-label="Main navigation"><a class="brand" href="../index.html"><span class="brand-mark">S</span>Songivo</a>
-			
-			<button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
-			
+		<nav class="nav" aria-label="Main navigation">
+			<a class="brand" href="../index.html">
+			<img class="brand-mark" src="../assets/images/songivo_icon.png" alt="">
+				Songivo
+			</a>			
+			<button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>			
 			<div class="nav-links" data-nav-links><a href="../features.html">Features</a>
 		          <a href="../help.html" aria-current="page">Docs</a>
 		          <a href="../contact.html">Contact</a>
@@ -38,58 +40,115 @@
 			
 			<h1>Settings</h1>
 			
-			<p class="doc-lede">Settings control appearance, layout, optional editor fields, purchases, sync status, diagnostics, bands, and support workflows.</p>
-			
-			<p>Open Settings when you want to change app-wide behavior rather than one song. On iPad, the sidebar keeps major categories visible while the selected detail appears on the right.</p>
-			
+			<p class="doc-lede">Songivo is fully customizable, so your songbook can feel at home in rehearsal, on stage, and everywhere in between.</p>
+						
 			<figure class="doc-shot">
-				<img src="../assets/images/docs/docs-settings-ipad.jpg" alt="Songivo Settings sidebar with iCloud Sync detail visible">
+				<img src="../assets/images/docs/docs-settings-ipad.png" alt="Songivo song viewer with command bar controls for performance">
 				
-				<figcaption>Settings collects profile, sync, band, song, color, metronome, song editor, purchases, documentation, debug, and about areas.</figcaption>
+				<figcaption>Songivo Settings</figcaption>
 			</figure>
 			
 			<section>
-				<h2>Appearance and display</h2>
-				
+				<h2>Profile</h2>
+				<p>Personalize the details and controls you see most often.</p>
 				<ul class="doc-list">
-					<li>Choose system, light, or dark appearance.</li>
-					<li>Adjust chord and lyric colors for light and dark song themes.</li>
-					<li>Set font family, base font size, ChordPro layout mode, and chord block alignment.</li>
-					<li>Control live bar size and opacity.</li>
-					<li>Choose whether setlists show position numbers and song numbers.</li>
+					<li>Your display name for song history and band attribution.</li>
+					<li>The iPad top-bar title size.</li>
+					<li>The floating control overlay’s size and transparency.</li>
+					<li>Song and setlist numbering, plus song-list sectioning.</li>
 				</ul>
 			</section>
 			
 			<section>
-				<h2>Editor fields</h2>
-				
-				<p>Optional fields such as author, copyright, CCLI, and time signature can be shown when your library needs them and hidden when you want a simpler editor.</p>
+				<h2>iCloud Sync</h2>
+				<p>Keep your personal library in step across your devices.</p>
+				<ul class="doc-list">
+					<li>There is nothing to configure in Songivo: songs, setlists, tags, and themes sync automatically when iCloud is available.</li>
+					<li>Use the status display to confirm that your library is up to date.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Band</h2>
+				<p>Set up and manage the shared libraries your group uses.</p>
+				<ul class="doc-list">
+					<li>Create a band, join one from a shared link, or select the band you manage.</li>
+					<li>Name a band, invite members, and manage membership.</li>
+					<li>Share an invite link for collaborators.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Song</h2>
+				<p>Shape how ChordPro songs read on the screen.</p>
+				<ul class="doc-list">
+					<li>Chord notation, layout mode, split-page threshold, and song-block alignment.</li>
+					<li>Song-header and ChordPro-label size, spacing, and emphasis.</li>
+					<li>Body text size and font family.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Color</h2>
+				<p>Give your charts a look that is clear in any lighting.</p>
+				<ul class="doc-list">
+					<li>System, light, or dark appearance.</li>
+					<li>Chord, lyric, background, verse, chorus, and bridge colors for light and dark themes.</li>
+					<li>ChordPro label colors for light and dark themes.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Metronome</h2>
+				<p>Make the metronome fit your playing environment.</p>
+				<ul class="doc-list">
+					<li>The beat-flash color.</li>
+					<li>The metronome click sound.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Song Editor</h2>
+				<p>Keep the editor focused on the information your library needs.</p>
+				<ul class="doc-list">
+					<li>Whether author, copyright, CCLI, and time-signature fields appear.</li>
+				</ul>
 			</section>
 			
 			<section>
 				<h2>Purchases</h2>
-				
-				<p>The Purchases screen shows remaining free song additions, remaining active band slots, yearly and lifetime unlimited-song options, and the extra active band slot purchase.</p>
-				
+				<p>Manage your Songivo plan and available band capacity.</p>
 				<ul class="doc-list">
-					<li>Free users can add 5 songs. Deleting songs does not restore free song additions.</li>
-					<li>Yearly and lifetime purchases unlock unlimited song additions.</li>
-					<li>Each &euro;0.99 extra active-band purchase adds one active band slot.</li>
-					<li>Restore Purchases restores yearly, lifetime, and eligible purchased extra active band slots for the same Apple Account. Repeatable band-slot capacity is reconstructed from verified, non-revoked StoreKit transaction history.</li>
+					<li>Choose a yearly unlimited-song subscription or a lifetime unlimited-song unlock.</li>
+					<li>Add active band slots when your group needs more room.</li>
+					<li>Restore eligible purchases for your Apple Account.</li>
 				</ul>
 			</section>
 			
 			<section>
-				<h2>Diagnostics</h2>
-				
-				<p>Use status panels, logs, and diagnostics snapshots when support needs context. Avoid advanced recovery tools unless the app or support specifically directs you there.</p>
+				<h2>Backup &amp; Restore</h2>
+				<p>Back up a library or restore it when you need to.</p>
+				<ul class="doc-list">
+					<li>Choose a personal or band library to export as a backup.</li>
+					<li>Choose the destination library when restoring a backup.</li>
+				</ul>
 			</section>
 			
-			<figure class="doc-shot">
-				<img src="../assets/images/docs/docs-tuner.png" alt="Songivo tuner overlay showing A4 reference and chromatic mode">
-				
-				<figcaption>Metronome and tuner settings affect the stage tools you use from the song workflow.</figcaption>
-			</figure>
+			<section>
+				<h2>Documentation</h2>
+				<p>Find help whenever you need a refresher.</p>
+				<ul class="doc-list">
+					<li>Open the documentation or start the in-app tutorial.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>About</h2>
+				<p>Find the essentials about the app and where to get help.</p>
+				<ul class="doc-list">
+					<li>View app version information, contact support, or open the privacy policy.</li>
+				</ul>
+			</section>
 			
 			<nav class="doc-next" aria-label="Article navigation"><a href="export-share.html">Previous: Exporting</a>
 		          <a href="troubleshooting.html">Next: Troubleshooting</a></nav>
@@ -98,7 +157,7 @@
 	
 	<footer class="footer">
 		<div class="footer-inner"><span>Copyright 2026 Songivo. All rights reserved.</span>
-	        <span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a></span></div>
+	        <span><a href="../features.html">Features</a> | <a href="../help.html">Docs</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy</a></span></div>
 	</footer>
     <script src="../assets/js/site.js"></script>
 </body>
