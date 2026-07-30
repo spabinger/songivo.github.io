@@ -31,7 +31,6 @@ body {
     linear-gradient(180deg, #130f0e 0%, var(--stage) 42%, #090807 100%);
   color: var(--ink);
   font-family: 'Manrope';
-  --font-family: Avenir Next, Optima, Candara, Segoe UI, sans-serif;
   line-height: 1.6;
 }
 
@@ -67,7 +66,7 @@ img {
   align-items: center;
   display: inline-flex;
   gap: 10px;
-  font-family: Georgia, Iowan Old Style, serif;
+  font-family: 'Manrope';  
   font-size: 1.28rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -538,7 +537,7 @@ p {
 .docs-console span {
   border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-family: 'Inter';
   font-size: 0.84rem;
   padding: 8px 0;
 }
