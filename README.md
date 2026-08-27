@@ -5,6 +5,10 @@ Static marketing and documentation website for Songivo.
 The canonical source is this `SongivoWeb` folder. Keep the site static unless a
 future requirement clearly needs a build system.
 
+Songivo entered production and launched on the App Store on August 26, 2026.
+Use the canonical [Songivo App Store listing](https://apps.apple.com/app/songivo/id6766636418)
+(App Store ID `6766636418`) for every website download link.
+
 ## Local preview
 
 From this folder:
@@ -51,16 +55,10 @@ Then open `http://127.0.0.1:4173/`.
 - internal links and fragments
 - image, stylesheet, and script paths
 - missing or duplicate page metadata
-- remaining non-App-Store launch placeholders
-- the known App Store link placeholder
+- remaining launch placeholders, including unresolved App Store links
 
-Normal validation fails on unresolved support, legal, or pricing placeholders.
-The App Store link is the only accepted placeholder while the app listing is not
-available. To require the final App Store URL too, run:
-
-```bash
-SONGIVO_REQUIRE_APP_STORE_LINK=1 SongivoWeb/scripts/validate-site.sh
-```
+Normal validation fails on unresolved support, legal, pricing, or App Store
+placeholders.
 
 ## Publishing model
 
@@ -100,10 +98,10 @@ SongivoWeb/scripts/validate-site.sh
 SongivoWeb/scripts/copy-to-pages-repo.sh
 ```
 
-## Before public launch
+## App Store maintenance
 
-- Add the real App Store URL when it is available.
+- Keep all download links pointed at the canonical App Store listing above.
 - Confirm the App Store product page is Free and App Store Connect prices match
   the website: 3.99€ yearly, 14.99€ lifetime, and €0.99 per extra active band
   slot.
-- Run App Store link validation with `SONGIVO_REQUIRE_APP_STORE_LINK=1`.
+- Run normal static-site validation after changing download links or pricing.
