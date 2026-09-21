@@ -45,6 +45,18 @@ Then open `http://127.0.0.1:4173/`.
    git diff --check -- SongivoWeb tasks/todo.md
    ```
 
+   The validation includes the generated `docs/search-index.json` and the
+   offline Help snapshot bundled by the app. After changing a documentation
+   article, refresh both before committing:
+
+   ```bash
+   SongivoWeb/scripts/generate-docs-search-index.py
+   SongivoWeb/scripts/sync-offline-help-content.py
+   ```
+
+   The installed app never downloads Help content. Website changes reach Help
+   only in the next Songivo build and App Store release containing this snapshot.
+
 5. For layout changes, preview locally and inspect desktop and mobile widths.
    Verify the mobile menu opens and the page has no horizontal overflow.
 
@@ -56,6 +68,9 @@ Then open `http://127.0.0.1:4173/`.
 - image, stylesheet, and script paths
 - missing or duplicate page metadata
 - remaining launch placeholders, including unresolved App Store links
+- a current `docs/search-index.json` generated from every documentation article
+- a current `SongivoWeb/OfflineHelp` snapshot, with third-party web font
+  links removed so the bundled Help remains fully offline
 
 Normal validation fails on unresolved support, legal, pricing, or App Store
 placeholders.
@@ -84,8 +99,9 @@ Run the publishing script from the app repository:
 SongivoWeb/scripts/copy-to-pages-repo.sh
 ```
 
-The script validates the static site, copies static files into the production
-checkout, commits the production checkout, and pushes the production branch.
+The script regenerates the documentation search index, validates the static site, copies public static files into the production
+checkout, commits the production checkout, and pushes the production branch. It excludes
+the app-only `OfflineHelp` snapshot.
 It does not stage, commit, or push this source repository.
 
 To use another local checkout, set `SONGIVO_PRODUCTION_REPO`. The legacy
@@ -94,9 +110,13 @@ To use another local checkout, set `SONGIVO_PRODUCTION_REPO`. The legacy
 Recommended publishing sequence:
 
 ```bash
-SongivoWeb/scripts/validate-site.sh
-SongivoWeb/scripts/copy-to-pages-repo.sh
+SongivoWeb/scripts/update-and-publish.sh
 ```
+
+This runs the four documentation workflow scripts in order: generate the search
+index, update the app's offline Help snapshot, validate the site, and publish the
+public website. The final publishing step still asks for confirmation before it
+changes the public repository.
 
 ## App Store maintenance
 
