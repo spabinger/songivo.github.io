@@ -4,9 +4,31 @@
     <loc>https://songivo.app/</loc>
   </url>
   <url>
+    <loc>https://songivo.app/digital-songbook-ipad.html</loc>
+  </url>
+  <url>
     <loc>https://songivo.app/features.html</loc>
   </url>
   <url>
     <loc>https://songivo.app/help.html</loc>
   </url>
+  <url><loc>https://songivo.app/contact.html</loc></url>
+  <url><loc>https://songivo.app/privacy.html</loc></url>
+  <url><loc>https://songivo.app/docs/annotations.html</loc></url>
+  <url><loc>https://songivo.app/docs/band-libraries.html</loc></url>
+  <url><loc>https://songivo.app/docs/chordpro.html</loc></url>
+  <url><loc>https://songivo.app/docs/export-share.html</loc></url>
+  <url><loc>https://songivo.app/docs/faq.html</loc></url>
+  <url><loc>https://songivo.app/docs/getting-started.html</loc></url>
+  <url><loc>https://songivo.app/docs/gig-mode.html</loc></url>
+  <url><loc>https://songivo.app/docs/import-songs.html</loc></url>
+  <url><loc>https://songivo.app/docs/link-songs.html</loc></url>
+  <url><loc>https://songivo.app/docs/live-mode.html</loc></url>
+  <url><loc>https://songivo.app/docs/pdf-workflow.html</loc></url>
+  <url><loc>https://songivo.app/docs/setlists.html</loc></url>
+  <url><loc>https://songivo.app/docs/settings.html</loc></url>
+  <url><loc>https://songivo.app/docs/song-library.html</loc></url>
+  <url><loc>https://songivo.app/docs/swiping.html</loc></url>
+  <url><loc>https://songivo.app/docs/troubleshooting.html</loc></url>
+  <url><loc>https://songivo.app/docs/tuner-metronome.html</loc></url>
 </urlset>
