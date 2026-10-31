@@ -19,13 +19,14 @@ if (helpSearch && guides.length > 0) {
 
   const filterGuides = () => {
     const query = helpSearch.value.trim().toLowerCase();
+    const terms = query ? query.split(/\s+/) : [];
     let visibleCount = 0;
 
     guides.forEach((guide) => {
       const link = guide.querySelector("a[href]");
       const path = link ? new URL(link.getAttribute("href"), document.baseURI).pathname : "";
       const haystack = `${guide.textContent} ${articleText.get(path.split("/").pop()) || ""}`.toLowerCase();
-      const isVisible = query.length === 0 || haystack.includes(query);
+      const isVisible = terms.every((term) => haystack.includes(term));
       guide.hidden = !isVisible;
       guide.setAttribute("data-hidden", String(!isVisible));
       if (isVisible) visibleCount += 1;
